@@ -1,0 +1,1 @@
+MsgBox(4, "Auto config Outlook 2003 TC profile For XXX", "Are you in domain?" & @CR & @CR & "Yes is create Exchange and POP3 Profile."  & @CR &  "No is only create POP3 Profile.")

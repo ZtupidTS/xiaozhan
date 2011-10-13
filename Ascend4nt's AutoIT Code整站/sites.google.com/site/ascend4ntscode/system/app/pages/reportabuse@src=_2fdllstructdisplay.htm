@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!-- saved from url=(0094)http://sites.google.com/site/ascend4ntscode/system/app/pages/reportabuse?src=/dllstructdisplay -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e=parseInt,h=window,i="length";function j(a){return document.getElementById(a)}h.byId=j;var k="";function l(a){return a.replace(/^\s+|\s+$/g,k)}h.trim=l;
+var m="MSIE",n="6.0",o="string",p='id="',q='" ',r='class="',s='title="',t="display:inline-block;",u="left",v="float:left;",w="right",x="float:right;",y="cursor:hand;",z="<span ",A=' style="width:',B="px; height:",C="px;",D=";padding: 0;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='",E="', sizingMethod='scale');\"></span><span style=\"padding: ",F=" ",G=";",H="float:",I='"></span>';
+h.ie6ImgFix=function(a){var b=h.navigator?navigator.userAgent:k;if(b.indexOf(m)!=-1&&typeof opera=="undefined"){var d=/MSIE\s+([^\);]+)(\)|;)/;d.test(b);b=RegExp.$1;if(b==n){var c=typeof a==o?j(a):a;a=c.id?p+c.id+q:k;b=c.className?r+c.className+q:k;d=c.title?s+c.title+q:s+c.alt+q;var f=t+c.style.cssText;if(c.align==u)f=v+f;if(c.align==w)f=x+f;if(c.parentElement.href)f=y+f;var g=c.currentStyle,L=c.width-e(g.paddingLeft,10)-e(g.paddingRight,10),M=c.height-e(g.paddingTop,10)-e(g.paddingBottom,10),N=
+z+a+b+d+A+L+B+M+C+f+D+c.src+E+g.paddingTop+F+g.paddingRight+F+g.paddingBottom+F+g.paddingLeft+G+(g.styleFloat?H+g.styleFloat+G:k)+I;h.setTimeout(function(){c.outerHTML=N},1)}}};var J=[],K=0;h.JOT_addListener=function(a,b,d){var c=new String(K++);a={eventName:a,handler:b,compId:d,key:c};J.push(a);return c};h.JOT_removeListenerByKey=function(a){for(var b=0;b<J[i];b++)if(J[b].key==a){J.splice(b,1);break}};
+h.JOT_removeAllListenersForName=function(a){for(var b=0;b<J[i];b++)J[b].eventName==a&&J.splice(b,1)};var O="function";h.JOT_postEvent=function(a,b,d){var c={eventName:a,eventSrc:b||{},payload:d||{}};if(h.JOT_fullyLoaded){b=J[i];for(d=0;d<b&&d<J[i];d++){var f=J[d];if(f&&f.eventName==a){c.listenerCompId=f.compId||k;(f=typeof f.handler==O?f.handler:h[f.handler])&&f(c)}}}else h.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:d})};h.JOT_delayedEvents=[];h.JOT_fullyLoaded=false;var P="__duration__";
+h.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(a>=1440||a<0)return null;var d=0;if(a>=60){a/=60;d=2}a>=2&&d++;return b?h.JOT_siteRelTimeStrs[d].replace(P,Math.floor(a)):h.JOT_userRelTimeStrs[d].replace(P,Math.floor(a))}; })()
+</script>
+<jot:extension xmlns:jot="http://www.google.com/ns/jotspot/srvtmpl/" declare="headScript" />
+<title xmlns="http://www.google.com/ns/jotspot">Report Abuse</title>
+<style xmlns="http://www.google.com/ns/jotspot">
+          html, body {
+            padding: 0;
+            margin: 0;
+          }          
+          body {
+            font-family: Arial, Verdana, sans-serif;
+            font-size: 12px;
+            background-color: #fff;
+            background-image: none;
+            direction: ltr;
+          }
+          .sites-clear:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+          }
+          #sites-header {
+            background-color: #fff;
+            border-bottom: 1px solid #b0bdcc;
+            height: 1%;
+            padding: 5px 5px 0 0;
+            margin-bottom: 10px;
+          }
+          .sites-account {
+            float: right;
+            font-size: 12px;
+            padding: 4px 8px 5px;
+          }
+          .sites-account a {
+            color: #4e7dbf; /* onebarLinkColor */
+          }
+          .sites-content-wrapper {
+            min-height: 150px;
+            margin: 0 5px;
+            _height: 150px !important;
+            padding: 5px;
+          }
+          h2 {
+            margin: 5px 0 10px;
+            font-size: 22px;
+          }
+          p {
+            margin-top: 0px;
+          }
+          .sites-subfooter {
+            font-size: 11px;
+            padding: 5px 0 5px;
+            text-align: center;
+          }
+          .sites-subfooter p {
+            margin: 0;
+            padding: 5px;
+          }
+          .sites-subfooter p span {
+            font-size: 10px;
+          }
+          #sites-logo {
+            margin-bottom: 15px;
+          }
+        </style>
+<style type="text/css">#body .goog-menuitem .sites-moreactions-icon {
+margin-top: 0;
+}
+
+/* Not sure exactly why, but I found that in the presence of position: relative
+(css) we need to trigger IE's internal, proprietary "hasLayout" mode in order
+to render correctly.  This is for all the zoom: 1 (css) in the file. */
+#body #sites-page-toolbar {
+zoom: 1;
+position: relative;
+}
+
+/* (midoringo) fixes b1471374 rule for toolbar to show correctly in RTL for IE6 */
+/* Don't know what exactly this fix the problem. */
+#sites-page-toolbar #sites-page-info-bar {
+/* position: static; */
+zoom: 1;
+}
+
+/* rule for toolbar's border-bottom to show correctly in RTL for IE6 */
+#sites-collaborator-bar{
+position: relative;
+}
+
+#sites-searchbox-search-button{
+height: 21px;
+}
+
+#sites-searchbox-select-button-wrapper{
+height: 21px;
+}
+
+#body .sites-attachment-icon,
+#body .sites-comment-icon {
+font-size: 1px !important;
+}
+
+/* trigger layout, otherwise the bgcolor on the comments area only fills to halfway down */
+#body #sites-comment-wrapper,
+#body #sites-attachment-wrapper {
+zoom: 1;
+}
+
+#body .sites-button-icon {
+margin-right: 5px;
+}
+
+/* (midoringo) This fixes bug 1867401, seems like position: static fixes some */
+/* IE RTL problem, but I don't know how exactly this fix the problem. */
+#body .modal-dialog-title {
+/* position: static; */
+zoom: 1;
+}
+
+#body .modal-dialog-content {
+height: 1%;
+}
+
+#body .goog-sites-pagefinder hr {
+clear: both;
+}
+
+#body .goog-sites-pagefinder .goog-tabpane {
+height: 225px;
+}
+
+#body .modal-dialog .goog-ws-logo {
+width: 400px;
+}
+
+#body .goog-button-base {
+margin-left: 2px;
+margin-right: 2px;
+}
+
+#body .sites-filecab-icon-delete {
+height: 20px;
+background-position: 0 2px;
+}
+
+#body .sites-filecab-icon-folder {
+height: 20px;
+background-position: 0 2px;
+}
+
+#body .sites-filecab-icon-new {
+height: 20px;
+background-position: 0 2px;
+}
+
+#body .sites-toolbar-icon-new {
+height: 20px;
+background-position: 0 2px;
+}
+
+#body .sites-toolbar-icon-edit {
+height: 20px;
+background-position: -13px 2px;
+}
+
+#body .sites-toolbar-icon-more-actions {
+height: 20px;
+margin: 0;
+}
+
+#body .sites-format-menu {
+/* IE 6 hack - otherwise it renders the menu at 100% screen width for some
+reason */
+_width: 20em;
+}
+
+.sites-format-menu .goog-menuitem-rtl {
+width: 150px;
+}
+
+.sites-menu-insert .goog-menuitem-rtl{
+width: 200px;
+}
+
+.sites-format-submenu .goog-menuitem-rtl {
+width: 60px;
+}
+
+.sites-insert-submenu .goog-menuitem-rtl{
+width: 100px;
+}
+
+.sites-menu-layout .goog-menuitem-rtl{
+width: 15em;
+}
+
+/* This is fix for bug 1891361 in the IE6 portion, This allows the icon in the
+MenuItem to display correctly on the right side. */
+#body .goog-toolbar-menu-item-icon {
+_position: static;
+}
+
+#body .announcements .announcement .postfooter p {
+margin: 0;
+padding: 0 0 15px;
+}
+
+#body .filecabinet .filecabinet-table {
+border-collapse: collapse;
+}
+
+#body .announcements {
+zoom: 1;
+}
+
+/* Fix for bug 1902901, parts of the list page are rendered off screen for
+IE RTL.  This fixes the position: relative used by the layout */
+#body .sites-list-showing-items,
+#body #sites-list-controls,
+#body .list-page {
+zoom: 1;
+}
+
+/* Fix for bug 1902397, float right causes text to shift out of bound of the
+containing <a> */
+#body .sites-list-sort-button {
+float: none;
+}
+
+#addPageElementEl .goog-ws-add {
+margin-right: 12px;
+}
+
+#body .lp-createpage-tree {
+height: 202px;
+}
+
+.sitelayout-dlg-img-container {
+zoom: 1;
+}
+
+.sites-sidebar-nav li {
+zoom: 1;
+}
+
+.nav-toc-content li {
+zoom: 1;
+}
+
+td.sites-copy-cell-name {
+padding: 6px 10px 0 10px;
+}
+
+td.sites-copy-cell {
+padding-top: 6px;
+}
+
+/*hack to fix the collaborator bar gradient for ie */
+#sites-page-toolbar {
+position: relative;
+z-index: 101;
+}
+
+
+/* Both IE6 and IE7 look at the css rule border-bottom-width: 0 and use
+* width: 1px instead... fortunately IE7 knows what border-color: transparent
+* means, so it doesn't have ugly border allover.  This rule targets nav in IE6
+* and set border-width to 0px to get rid of the problem.
+*/
+#body .sites-sidebar-nav li,
+#body .sites-sidebar-nav div,
+#body .sites-sidebar-nav a {
+_border-bottom-width: 0px !important;
+}
+
+.sites-clear {
+zoom: 1;        /* triggers hasLayout */
+display: block; /* resets display for IE/Win */
+}
+</style>
+<link rel="stylesheet" type="text/css" href="../../../../../../www.gstatic.com/sites/p/8c5068/system/app/themes/slate/standard-css-slate-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../../_/rsrc/1270179870929/system/app/css/overlay.css@cb=null170goog-ws-left.css" />
+<style>
+            body {
+              font-family: Arial, Verdana, sans-serif;
+              font-size: 12px;
+              background-color: #fff;
+              background-image: none;
+            }
+            </style>
+<script>
+
+
+var webspace = {"signInUrl":"../../../../../../https@www.google.com\a\universallogin@continue=http_253a_252f_252fsites.google.com_252fsite_252fascend4ntscode_252fsystem_252fapp_252fpages_252freportabuse&service=jotspot","isGaiaBarRendered":true,"isConsumer":true,"termsUrl":"../../../../../../www.google.com/sites/help/intl/en/terms.html","enableAnalytics":true,"homePath":"/","sharingPolicy":"OPENED","isAdsenseEnabled":true,"analyticsAccountId":"UA-10188299-2","baseUri":"../../../default.htm","name":"ascend4ntscode","features":{"lazySiteHierarchy":true,"subpageNav":false,"multipleCalendar":true,"enableNewBrowserEditChecks":true,"useStandardEmbedsInSidebar":false,"experimental":{"displayEditorLockExceptions":false},"navadminperf":false,"structuredDataSchemas":false,"kixEmbedSupport":true},"domain":"defaultdomain","adsensePublisherId":null,"isStartPageEnabled":false,"domainAnalyticsAccountId":"","siteTitle":"Ascend4nt's AutoIT Code"};
+
+
+webspace.gadgets = {"isGadgetDirectoryEnabled":true,"baseUri":"gadgets","isGgsRenderingEnabled":true};
+
+
+webspace.user = {"uid":"","hasAdminAccess":false,"guest_":true,"domain":"","hasWriteAccess":false,"userName":"guest","dasherUser":false,"primaryEmail":"guest","displayNameOrEmail":"guest"};
+
+webspace.page = {"canDeleteWebspace":null,"locale":"en","state":"","wuid":"wuid:gx:269d66d1f674c46c","timeZone":"Asia/Hong_Kong","properties":{},"type":"text","canChangePath":true,"parentWuid":"wuid:gx:3eef026f58c8f962","revision":0,"title":"Report Abuse","isRtlLocale":false,"bidiEnabled":false,"siteLocale":"en","name":"reportAbuse","path":"../../../../../system/app/pages/reportabuse","isSiteRtlLocale":false,"parentPath":"../../../../../system/app/pages"};
+
+
+var editorResources = [
+  '../../../../../../www.gstatic.com/sites/p/8c5068/system/js/trog_edit__en.js',
+  '../../../../../../www.gstatic.com/sites/p/8c5068/system/app/css/trogedit.css',
+  '../../../_/rsrc/1270179870874/system/app/css/editor.css'
+];
+
+var JOT_clearDotPath = '../../../../../../www.gstatic.com/sites/p/8c5068/system/app/images/cleardot.gif';
+
+
+var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+
+webspace.page.currentTemplate = {"title":"Web Page","path":"../../../../../system/app/pagetemplates/text"};
+
+
+
+
+
+var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script src="../../../../../../www.gstatic.com/sites/p/8c5068/system/js/jot_min__en.js"></script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot">
+<div id="sites-status" class="sites-status" style="display:none;">
+<div id="sites-notice" class="sites-notice"> </div>
+</div>
+<div class="sites-content-wrapper">
+<img xmlns="http://www.w3.org/1999/xhtml" src="../../../../../../www.gstatic.com/sites/p/8c5068/system/app/images/logo/logo.gif" id="sites-logo" alt="Google Sites Logo" />
+<h2>Report Abuse</h2>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:jot="http://www.google.com/ns/jotspot/srvtmpl/">
+
+<div id="COMP_reportAbuse">
+<div>
+<p>By submitting this form, you are alerting the Google Sites team that this site has content that is in violation of our <a href="../../../../../../www.google.com/sites/help/intl/en/terms.html" target="_blank">Terms of Service</a>.</p>
+<p>If you own the copyright to content on this site and would like it removed, please see our <a href="../../../../../../www.google.com/sites_dmca.html" target="_blank">instructions for notification of copyright infringement</a>.</p>
+</div>
+<p class="goog-ws-border-top" style="padding-top: 10px;">
+<strong>Why are you reporting the content on this site as inappropriate?</strong>
+<p>
+<input jotId="reason_nudity" name="reason" type="radio" />
+            This site contains nudity.
+          <br />
+<input jotId="reason_hate" name="reason" type="radio" />
+            This site promotes violence or is hateful.
+          <br />
+<input jotId="reason_phishing" name="reason" type="radio" />
+            This site is used for phishing.
+          <br />
+<input jotId="reason_malware" name="reason" type="radio" />
+            This site contains malware.
+          <br />
+<input jotId="reason_spam" name="reason" type="radio" />
+            This site contains spam.
+          <br />
+<input jotId="reason_other" name="reason" type="radio" />
+            This site contains content that is otherwise inappropriate.
+          </p>
+<strong> Your email address: </strong>
+<p><input type="text" onpropertychange="JOT_setTextDir(this)" oninput="JOT_setTextDir(this)" dir="" style="width:200 px" jotId="reporterEmail" name="reporterEmail" /></p>
+</p>
+<div>
+<div class="goog-inline-block goog-button goog-button-base   "><div class="goog-inline-block goog-button-base-outer-box"><div class="goog-inline-block goog-button-base-inner-box"><div class="goog-button-base-pos"><div class="goog-button-base-top-shadow"> </div><div id="btnOk" class="goog-button-base-content " style="" onclick="JOT_reportAbuse()"><span id="btnOk-label">Submit</span></div></div></div></div></div>
+</div>
+</div>
+</html>
+</div>
+</body>
+</html>

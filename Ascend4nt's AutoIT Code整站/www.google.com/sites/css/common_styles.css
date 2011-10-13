@@ -1,0 +1,104 @@
+body {
+	font-family: arial,sans-serif;
+	color: #000;
+	margin:10px 20px 10px 10px;
+	background-color:#fff;
+}
+
+body, td p {
+	font-size:small;
+}
+
+td#logo {
+	padding-right:8px;
+}
+
+#nav {
+	padding:8px 10px 10px 8px;
+	width:140px;
+}
+	#nav ul.main, #nav ul.sub {
+		margin:0px;
+		padding:0px 10px 0px 0px;
+		list-style-type:none;
+	}
+		#nav ul.main li {
+			padding-bottom:10px;
+			text-align:left;
+		}
+		#nav ul li.selected a {
+			font-weight:bold;
+			color:#333;
+			text-decoration:none;
+		}
+
+	#nav ul.right li {
+		text-align:right;
+	}
+	#nav ul.sub li {
+		padding:0px 0px 0px 3px;
+	}
+	
+
+td#content {
+}
+
+h1 {
+	margin:0px;
+	font-size:120%;
+	border-bottom:1px solid #999;
+	padding-bottom:3px;
+	color:#333;
+}
+
+h2 {
+	font-size:120%;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+	h2.pageHeader {
+		border:none;
+		margin-top:8px;
+		padding-top:0px;
+	}
+	
+h3 {
+	font-size:110%;
+}
+
+h4 {
+	font-size:110%;
+	font-weight:normal;
+	padding-bottom:4px;
+	margin:0px 0px 8px 0px;
+}
+
+h5 {
+	font-size:24px;
+}
+
+/* Header colors */
+
+h2, h3, h4 { color:#333; }
+
+h2, h4  {
+	border-bottom:1px solid #ccc;
+}
+
+/* Bubble styles */
+
+table.bubble {
+	background-color:#DDECF8;
+}
+
+td.bubble-content {
+	padding:6px;
+}
+
+#footer {
+	font-size:11px;
+	color:#666;
+	border-top:1px solid #ccc;
+	padding-top:12px;
+	margin-top:20px;
+}

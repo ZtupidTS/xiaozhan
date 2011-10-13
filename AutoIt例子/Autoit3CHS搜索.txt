@@ -1,0 +1,474 @@
+1 #ce,#comments-end,#comments-start,#cs   开始脚本某个区段的注释
+2 #include  包含指定文件到当前脚本中
+3 #include-once 指定当前文件只能被包含一次
+4 #NoTrayIcon 脚本开始执行时不在托盘区显示 AutoIt 图标
+5 #RequireAdmin 指定当前脚本需要管理员用户才能执行
+6 Abs 求某个数的绝对值
+7 ACos 求某个数的反余弦值(arcCosine)
+8 AdlibDisable 禁用 Adlib 功能
+9 AdlibEnable 启用 Adlib 功能
+10 Asc 返回某字符的 ASCII 码数值
+11 AscW 返回 Unicode 字符的代码
+12 ASin 求某个数的反正弦值(arcsine)
+13 Assign 给指定变量赋值
+14 ATan 求某个数的反正切值(arctangent)
+15 AutoItSetOption 调整Autoit各种函数/参数的运作方式
+16 AutoItWinGetTitle 获取 AutoIt 窗口的标题名。
+17 AutoItWinSetTitle 修改 AutoIt 窗口的标题名。 
+18 Beep 播放 beep 声音(PC蜂鸣器). 
+19 Binary 返回一个表达式的二进制值. 
+20 BinaryLen 返回一个二进制变量的字节数
+21 BinaryMid 取出二进制变量里面X字节的内容.
+22 BinaryToString 转换一个二进制变量为ANSI字符串.
+23 BitAND 按位"与"运算
+24 BitNOT 按位"取反"运算
+25 BitOR BitOR 按位"或"运算
+26 BitRotate  通过循环执行位移操作
+27 BitShift  按位"移"运算
+28 BitXOR 按位"异或"运算
+29 BlockInput  屏蔽/启用鼠标与键盘(输入)
+30 Break  允许或禁止用户从脚本程序的托盘菜单中退出
+31 Func...Return...EndFunc(ByRef)  定义一个用户自定义函数(UDF),返回一个0,或者更多参数的结果
+32 Call  调用自定义函数.可以包含参数
+33 AutoItSetOption(CaretCoordMode (选项)ColorMode (选项))  调整Autoit各种函数/参数的运作方式
+34 Select...Case...EndSelect  条件运行语句
+35 Switch...Case...EndSwitch  条件运行语句
+36 CDTray 弹出或关闭光驱
+37 Ceiling 返回一个数的四舍五入值(最靠近的最大整数，只入不舍)
+38 Chr  返回指定ASCII码所对应的字符
+39 ChrW  返回一个字符对应的Unicode(统一的字符编码标准, 采用双字节对字符进行编码)代码
+40 ClipGet  获取剪切板里的文本
+41 ClipPut  在剪切板中写入文本
+42 ConsoleRead  读取AU3进程中的 STDIN 流字符
+43 ConsoleWrite  写入数据到 STDOUT 流.一些文本编辑器可以读取这个流作为其他程序可接受的数据
+44 ConsoleWriteErro 写入数据到 STDERR 流. 一些文本编辑器可以读取这个流作为其他程序可接受的数据
+45 Dim / Global / Local / Const  定义一个变量、常量, 或者创建一个数组
+46 ContinueCase  中止当前事件，在选取(Select)或开关(Switch)块中继续下一个事件
+47 ContinueLoop  继续 While / Do / For 循环
+48 ControlClick  向指定控件发送鼠标点击命令
+49 ControlCommand  向指定控件发送命令
+50 ControlDisable  禁用或使某控件变成灰色不可用状态
+51 ControlEnable  使灰色按钮/控件变为"可用"状态
+52 ControlFocus 设置输入焦点到指定窗口的某个控件上
+53 ControlGetFocus  返回指定窗口上键盘焦点所在的控件的类别名
+54 ControlGetHandle 获取指定控件的内部句柄
+55 ControlGetPos 获取指定控件相对其窗口的坐标位置和大小等信息
+56 ControlGetText  获取指定控件上的文本
+57 ControlHide  隐藏指定控件
+58 ControlListView   向指定的 ListView32 控件发送命令
+59 ControlMove 在窗口内移动控件
+60 ControlSend  向指定的控件发送字符串
+61 ControlSetText 修改指定控件的文本
+62 ControlShow  显示已经隐藏的控件
+63 ControlTreeView  发送命令到一个 TreeView32 控件
+64 Cos 求某个数的余弦值(cosine)
+65 Dec  返回某十六进制数的十进制数值
+66 Default 在函数调用中使用的关键字
+67 DirCopy  复制指定目录及其所有子目录和文件(类似于xcopy命令)
+68 DirCreate  新建一个目录/文件夹
+69 DirGetSize  以字节[B]计算，返回给定目录的大小
+70 DirMove  移动指定目录及其所有子目录和文件
+71 DirRemove   删除一个目录/文件夹
+72 DllCall  调用指定DLL(动态链接库)文件里面的函数
+73 DllCallbackFree  释放一先前以 DllCallbackRegister 建立的句柄
+74 DllCallbackGetPtr  返回一个回叫函数指针传给 Win32 API
+75 DllCallbackRegister  产生用户定义的 DLL 回叫函数
+76 DllClose   关闭此前打开过的DLL文件
+77 DllOpen  打开指定的 DLL 文件以供 DllCall 函数使用
+78 DllStructCreate  产生一个 C/C++ 样式结构供 DllCall 使用
+79 DllStructGetData  返回 struct 元素的数据
+80 DllStructGetPtr  返回 struct 或 struct 一个元素的指针
+81 DllStructGetSize  在 bytes 中返回 struct 的大小
+82 DllStructSetData   在 struct 中设置数据元素
+83 Do...Until  基于一个表达式循环
+84 DriveGetDrive  返回一个含有指定驱动器盘符的数组
+85 DriveGetFileSystem  返回指定驱动器的文件系统类型
+86 DriveGetLabel  若指定的驱动器分区的卷标非空则返回该卷标值
+87 DriveGetSerial 返回指定驱动器的序列号
+88 DriveGetType   返回指定驱动器的类型
+89 DriveMapAdd  映射网络驱动器
+90 DriveMapDel  断开网络驱动器
+91 DriveMapGet  获取已映射网络驱动器的路径
+92 DriveSetLabel  修改指定驱动器的卷标
+93 DriveSpaceFree  以MB(兆字节)为单位返回指定路径所在分区的剩余空间
+94 DriveSpaceTotal  以MB(兆字节)为单位返回指定路径所在分区的容量大小
+95 DriveStatus  以字符串的形式返回指定驱动器的状态
+96 If...ElseIf...Else...EndIf  有条件运行语句
+97 Func...Return...EndFunc  定义一个用户自定义函数(UDF),返回一个0,或者更多参数的结果.
+98 Select...Case...EndSelect  条件运行语句
+99 Switch...Case...EndSwitch  条件运行语句
+100 With...EndWith 使用于代替很长的对象类型变量
+101 Enum  枚举常量
+102 EnvGet  返回指定的系统环境变量的值
+103 EnvSet  写入或修改一个环境变量
+104 EnvUpdate  更新操作系统的环境变量
+105 Eval 返回字符串形式的变量的值
+106 Execute  执行一个表达式(主要用于数学求值)
+107 Exit  终止脚本运行
+108 ExitLoop  中断一个 While / Do / For 循环
+109 Exp  求自然对数 e 的指定幂运算结果
+110 False / True  逻辑表达式中使用的布尔值
+111 FileChangeDir   更改当前的工作目录
+112 FileClose  关闭此前已打开的文本文件
+113 FileCopy  复制一个或多个文件
+114 FileCreateNTFSLink  创建一个 NTFS 硬盘连接到一个文件或者文件夹
+115 FileCreateShortcut  创建指定文件的快捷方式(.lnk文件)
+116 FileDelete  删除一个或多个文件
+117 FileExists  检查指定文件或目录是否存在
+118 FileFindFirstFile 返回一个依照搜索的字符串得到的搜索"句柄"
+119 FileFindNextFile  搜索指定字符串并返回(下一个)与之匹配的文件名，但要求在调用过FileFindFirstFile 函数之后
+120 FileGetAttrib  返回指定文件的属性代码
+121 FileGetLongName  返回指定路径的长文件名
+122 FileGetShortcut  获取指定快捷方式的各种属性
+123 FileGetShortName  返回指定路径的短文件名(按8.3命名规则,即文件前缀8个字符,后缀3个字符)
+124 FileGetSize  以字节为单位返回指定文件的大小
+125 FileGetTime   返回指定文件的时间戳(时间和日期)信息
+126 FileGetVersion 返回指定"文件"(通常是指可执行文件)的版本信息
+127 FileInstall  包含并装入指定文件到编译后的脚本程序中
+128 FileMove  移动一个或多个文件
+129 FileOpen  打开指定的文件以供读写
+130 FileOpenDialog   显示一个文件打开对话框
+131 FileRead  从此前已打开的文本文件中读取指定数量的字符
+132 FileReadLine  从此前已打开的文本文件中读取指定行的字符
+133 FileRecycle  把指定的文件或目录放入回收站
+134 FileRecycleEmpty  清空回收站
+135 FileSaveDialog 显示一个文件保存对话框
+136 FileSelectFolder   显示一个文件夹选择对话框
+137 FileSetAttrib  修改一个或多个文件的属性
+138 FileSetTime  修改一个或多个文件的时间戳
+139 FileWrite   向此前已打开的文本文件尾追加一行数据
+140 FileWriteLine  向此前已打开的文本文件尾追加一行数据
+141 Floor 返回一个数的四舍五入值(最靠近的最小整数 只舍不入)
+142 For...In...Next  列举对象集合或数组中的元素
+143 For...To...Step...Next  基于表达式循环
+144 FtpSetProxy  设置访问FTP时使用的代理服务器
+145 Func...Return...EndFunc   定义一个用户自定义函数(UDF),返回一个0,或者更多参数的结果
+146 Func OnAutoItExit ()...EndFunc  定义一个脚本退出时执行的用户自定义函数
+147 Func OnAutoItStart ()...EndFunc 定义一个脚本启动时调用的用户自定义函数
+148 Func...Return...EndFunc  定义一个用户自定义函数(UDF),返回一个0,或者更多参数的结果
+149 GUI 参数  下面列出的是 AutoIt 的所有 GUI 更新函数。点击函数名即可查看相关说明
+150 GUI 的 OnEvent 模式  在 OnEvent (事件驱动)模式下
+151 GUICreate  创建一个 GUI 窗口
+152 GUICtrlCreateAvi  在GUI上创建一个AVI视频控件
+153 GUICtrlCreateButton  在GUI上创建一个按钮控件
+154 GUICtrlCreateCheckbox  在GUI上创建一个复选框(Checkbox)控件
+155 GUICtrlCreateCombo  在GUI上创建一个选择框(ComboBox)控件
+156 GUICtrlCreateContextMenu  在指定控件或GUI窗口上创建上下文菜单(右键)
+157 GUICtrlCreateDate 在GUI上创建一个日期控件
+158 GUICtrlCreateDummy  在GUI上创建一个 Dummy 控件
+159 GUICtrlCreateEdit  在GUI上创建一个编辑框(Edit)控件
+160 GUICtrlCreateGraphic 在GUI上创建一个图形(Graphic)控件
+161 GUICtrlCreateGroup 为 GU 产生一个组框控件
+162 GUICtrlCreateIcon  在GUI上创建一个图标(Icon)控件
+163 GUICtrlCreateInput 在GUI上创建一个输入框(Input)控件
+164 GUICtrlCreateLabel  在GUI上创建一个静态的 Label 控件
+165 GUICtrlCreateList  在GUI上创建一个列表(List)控件
+166 GUICtrlCreateListView  在GUI上创建一个 ListView 控件
+167 GUICtrlCreateListViewItem  在GUI上创建一个 ListView 项目控件
+168 GUICtrlCreateMenu  在GUI上创建一个菜单控件
+169 GUICtrlCreateMenuItem 在GUI上创建一个菜单项目控件
+170 GUICtrlCreateMonthCal 在GUI上面创建一个月历控件
+171 GUICtrlCreateObj  在GUI上面创建一个 ActiveX 控件
+172 GUICtrlCreatePic 在GUI上创建一个图片控件
+173 GUICtrlCreateProgress  在GUI上创建一个进度条控件
+174 GUICtrlCreateRadio 在GUI上创建一个单选框(Radio)控件
+175 GUICtrlCreateSlider  在GUI上创建一个滑动条(Slider)控件
+176 GUICtrlCreateTab  在GUI上创建一个标签页(Tab)控件
+177 GUICtrlCreateTabItem  在GUI上创建一个标签页控件项目
+178 GUICtrlCreateTreeView  在GUI上创建一个 TreeView 控件
+179 GUICtrlCreateTreeViewItem  在GUI上创建一个 TreeView 控件项目
+180 GUICtrlCreateUpdown  在GUI上创建一个 Updown（上下箭头）控件
+181 GUICtrlDelete   删除指定控件
+182 GUICtrlGetHandle   返回一个指定控件或者项目 (Menu, ContextMenu, TreeViewItem)的句柄
+183 GUICtrlGetState  获取指定控件的当前状态
+184 GUICtrlRead  读取指定控件的状态或相关数据
+185 GUICtrlRecvMsg   获取控件消息。向指定控件发送消息并获取返回的 lParam 的值
+186 GUICtrlRegisterListViewSort   为 listview 控件注册一个用户定义列排序函数
+187 GUICtrlSendMsg   向指定控件发送消息
+188 GUICtrlSendToDummy  向指定的 Dummy（虚拟）控件发送消息
+189 GUICtrlSetBkColor  设置指定控件的背景颜色
+190 GUICtrlSetColor   设置指定控件的文本颜色
+191 GUICtrlSetCursor  为特定控件指定一个鼠标指针
+192 GUICtrlSetData   修改指定控件的数据
+193 GUICtrlSetDefBkColor   设置 GUI 所有控件的默认背景色.
+194 GUICtrlSetDefColor  设置 GUI 所有控件文本的默认背景色
+195 GUICtrlSetFont  设置指定控件的字体
+196 GUICtrlSetGraphic   修改画图控件的数据
+197 GUICtrlSetImage  设置指定控件的位图或图标
+198 GUICtrlSetLimit  设置某些控件的字符数或象素数限制
+199 GUICtrlSetOnEvent  为指定控件的点击行为定义一个用户函数
+200 GUICtrlSetPos  调整某个控件在窗口中的坐标位置
+201 GUICtrlSetResizing  设置某个控件的大小调整方式
+202 GUICtrlSetState  调整指定控件的状态
+203 GUICtrlSetStyle  更改指定控件的样式
+204 GUICtrlSetTip  定义指定控件的关联提示文本
+205 GUIDelete  删除指定窗口和使用的所有控件(在内存占用的空间)
+206 GUIGetCursorInfo  获取(相对于 GUI 窗口的)鼠标位置
+207 GUIGetMsg   捕获窗口消息
+208 GUIGetStyle  检索 GUI 窗口的样式
+209 GUIRegisterMsg  为已知的Windows 消息代码(WM_MSG)注册一个用户自定义的函数
+210 GUISetAccelerators  在 GUI 中设置快捷键
+211 GUISetBkColor  为GUI窗口设置背景颜色
+212 GUISetCoord   为下一个控件设置绝对坐标
+213 GUISetCursor  设置（鼠标经过窗口时的）鼠标指针
+214 GUISetFont  设置窗口的默认字体
+215 GUISetHelp   设置在用户按下F1时就打开的（可执行）文件
+216 GUISetIcon  设置窗口图标
+217 GUISetOnEvent  当一个系统按钮被点击时调用一个用户自定义函数(UDF)
+218 GUISetState  调整窗口的状态
+219 GUISetStyle   改变窗口样式
+220 GUIStartGroup  使此后所有被创建的控件都归为一组
+221 GUISwitch  切换用于 GUI 函数的"当前"窗口
+222 Hex  返回某整型数(十进制)的十六进制数值
+223 HotKeySet  设置一个可调用某用户函数的热键
+224 HttpSetProxy  设置访问HTTP时使用的代理服务器
+225 HWnd  转换一个表达式为 HWND 句柄
+226 If...Then  单一条件运行语句 
+227 If...ElseIf...Else...EndIf   有条件运行语句
+228 For...In...Next  列举对象集合或数组中的元素
+229 #include   包含指定文件到当前脚本中
+230 #include-once  指定当前文件只能被包含一次
+231 InetGet  通过HTTP或FTP协议从互联网上下载指定文件
+232 InetGetSize  以字节为单位返回存放在互联网上的指定文件的大小
+233 IniDelete  从某标准配置文件(*.ini)中删除某个数值
+234 IniRead  从某标准配置文件(*.ini)中读取某个数值
+235 IniReadSection  从某标准配置文件(*.ini)中读取某个字段名的所有关键字或值
+236 IniReadSectionNames  从某标准配置文件(*.ini)中读取所有字段的信息
+237 IniRenameSection  重命名INI文件里面的字段
+238 IniWrite  向某标准配置文件(*.ini)中写入某个数值
+239 IniWriteSection  将数据写入到标准INI文件的一个字段
+240 InputBox  显示一个输入框以供用户输入数据
+241 Int  返回某个表达式的整数(整数部分)值
+242 IsAdmin  检查当前用户是否拥有管理员权限
+243 IsArray  检查某个变量是否数组类型
+244 IsBinary 检查一个变量是否是 binary (二进制)类型
+245 IsBool  检查一个变量是否是布尔值类型(boolean)
+246 IsDeclared  检测某个变量是否已声明
+247 IsDllStruct  检查一个变量是否是 DllStruct 类型
+248 IsFloat  检测某个变量或表达式是否浮点数
+249 IsHWnd  检查一个变量是否是 HWND (句柄)类型
+250 IsInt  检测某个变量或表达式是否整型数
+251 IsKeyword   检查一个变量是否是一个关键字(例子, 默认)
+252 IsNumber  检测某个变量是否数字类型数据
+253 IsObj   检查一个变量或者表达式是否为对象类型
+254 IsPtr 检查一个变量是否为指针类型
+255 IsString  检测某个变量是否字符类型数据
+256 Log  求某个数的自然对数
+257 MemGetStats  获取内存信息
+258 Mod  求模运算
+259 MouseClick  执行鼠标点击操作
+260 MouseClickDrag  执行鼠标拖曳操作
+261 MouseDown  在当前位置产生一个鼠标按下(按键)事件
+262 MouseGetCursor  返回当前鼠标指针形状的ID
+263 MouseGetPos  获取当前鼠标的坐标位置
+264 MouseMove  移动鼠标指针
+265 MouseUp  在当前位置产生一个鼠标释放(按键)事件
+266 MouseWheel  产生向上或向下滚动鼠标滚轮事件.仅支持NT/2000/XP
+267 MsgBox  显示一个简单的对话框(可设置超时属性)
+268 For...To...Step...Next  基于表达式循环
+269 #NoTrayIcon  脚本开始执行时不在托盘区显示 AutoIt 图标
+270 Number  返回某表达式的数值结果
+271 ObjCreate  创建一个指定的 COM 对象
+272 ObjEvent  包含一个已经得到的Object(对象)的事件句柄
+273 ObjGet  对 COM 对象从现有的进程或文件名检索一个参考
+274 ObjName  返回对象的名字或接口描述
+275 Func OnAutoItExit ()...EndFunc  定义一个脚本退出时执行的用户自定义函数
+276 Func OnAutoItStart ()...EndFunc  定义一个脚本启动时调用的用户自定义函数
+277 AutoItSetOption  调整Autoit各种函数/参数的运作方式
+278 Ping  向指定的远程主机发送Ping命令并返回收发时间量
+279 PixelChecksum  生成某区域象素的校验和
+280 PixelGetColor  返回指定坐标位置上象素点的颜色值
+281 PixelSearch  在指定矩形区域中搜寻与指定颜色值匹配的象素(并返回第一个匹配的象素的坐标)
+282 ProcessClose  结束某个进程
+283 ProcessExists   检查指定进程是否存在
+284 ProcessGetStats  返回一个数组,数组中包含了运行中的进程的内存或者IO信息
+285 ProcessList  返回当前运行中的进程列表(含有进程名和 PID 值)
+286 ProcessSetPriority  设置某个进程的优先级
+287 ProcessWait  暂停脚本的执行直至给定进程出现为止
+288 ProcessWaitClose  暂停脚本的执行直至给定进程不再存在为止
+289 ProgressOff  关闭进度条窗口
+290 ProgressOn  创建自定义进度条窗口
+291 ProgressSet  设置此前创建的进度条窗口的坐标位置,文字等属性
+292 Ptr  转换一个表达式到指针变量内
+293 Random  产生一个伪随机的浮点数
+294 ReDim  调整一个已经存在的数组的大小
+295 RegDelete  从注册表中删除指定键值
+296 RegEnumKey  读取指定子键的名称
+297 RegEnumVal  读取指定值项的名称
+298 RegRead  读取注册表指定的值
+299 RegWrite  创建一个主键,子键或值项
+300 #RequireAdmin  指定当前脚本需要管理员用户才能执行
+301 Func...Return...EndFunc  定义一个用户自定义函数(UDF),返回一个0,或者更多参数的结果
+302 Round  返回某数值精确到指定位的结果
+303 Run  运行外部程序
+304 RunAs  在不同的用户环境的运行一个外部程序
+305 RunAsWait  在不同的用户环境的运行一个外部程序和中止脚本执行直到程序完成
+306 RunWait  运行一个外部程序并暂停脚本的执行直至该程序执行完毕
+307 Select...Case...EndSelect  条件运行语句
+308 Send  向激活窗口发送模拟键击操作
+309 Send Key 列表
+310 SendKeepActive  在Send()时,尝试保持指定窗口激活状态
+311 SetError  设置宏 @error 的值
+312 SetExtended  设置宏 @extended 的值
+313 ShellExecute   使用 ShellExecute API 执行一个外部程序
+314 ShellExecuteWait  使用 ShellExecute API 执行一个外部程序并暂停脚本运行,直到外部程序正常结束
+315 Shutdown  关机
+316 Sin  求某个数的正弦值(sine)
+317 Sleep  使脚本暂停指定时间段
+318 SoundPlay  播放指定的音频文件
+319 SoundSetWaveVolume  调整系统波形音量的百分比大小
+320 SplashImageOn  创建一个自定义的图片(闪屏/封面)窗口
+321 SplashOff  关闭闪屏
+322 SplashTextOn  创建一个自定义的文字(闪屏)窗口
+323 Sqrt  求某个数的平方根
+324 SRandom  设置随机数函数(random)的生成种子数
+325 StatusbarGetText  获取标准状态栏控件的文本
+326 StderrRead  从 STDERR 流读出一先前运行的子进程
+327 StdinWrite  对先前运行的子进程写一些字符到 STDIN 流
+328 StdioClose  关闭先前运行进程的所有关联文件，用 STDIO 重定向
+329 StdoutRead  从 STDOUT 流读先前运行的子进程
+330 For...To...Step...Next  基于表达式循环
+331 String   返回某表达式的字符串结果
+332 StringAddCR   在指定字符串的所有换行符( Chr(10) )前附加一个回车( Chr(13) )(ASCII码)
+333 StringCompare  按选项比较两个字符串.
+334 StringFormat  返回格式化过后的字符 (与 C 语言的sprintf() 函数相似).
+335 StringFromASCIIArray  转换一个数组 ASCII 编码到一字串
+336 StringInStr   检查某个字符串是否含有给定的子串
+337 StringIsAlNum   检查某个字符串是否包含空格符、断句符号或阿拉伯数字
+338 StringIsAlpha  检查某个字符串是否包含空格符、标点符号或阿拉伯数字
+339 StringIsASCII  检查某个字符串是否仅含有介于 0x00 到 0x7f (0-127)之间的ASCII码字符
+340 StringIsDigit  检查某个字符串是否仅含有数字(0-9)字符
+341 StringIsFloat  检查某个字符串是否为浮点数
+342 StringIsInt  检查某个字符串是否整型数
+343 StringIsLower  检查某个字符串是否仅含有小写字母
+344 StringIsSpace   检查某个字符串是否仅含有"空白符".
+345 StringIsUpper   检查某个字符串是否仅含有大写字母
+346 StringIsXDigit  检查某个字符串是否仅含有十六进制字符(0-9, A-F)
+347 StringLeft 返回字符串中从左开始指定数量的字符
+348 StringLen  返回指定字符串的字符总数
+349 StringLower 转换字符串为小写字母
+350 StringMid  取某个字符串的部分字符
+351 StringRegExp   检查字串是否符合给定的正则表达式模式
+352 StringRegExpReplace   基于正则表达式的文本替换
+353 StringReplace  替换字符串中的指定子串
+354 StringRight  返回字符串中从右开始指定数量的字符
+355 StringSplit  以指定分隔符把字符串拆分成若干子串
+356 StringStripCR   删除字符串中的所有回车( Chr(13) ). 
+357 StringStripWS  删去字符串中的所有"空白符". 
+358 StringToASCIIArray  对包含ASCII[代]码的数组的每个字符转换一个字串
+359 StringToBinary  转换字符串到二进制数据
+360 StringTrimLeft  删除字符串中从左开始指定数量的字符
+361 StringTrimRight  删除字符串中从右开始指定数量的字符
+362 StringUpper   转换字符串为大写字母
+363 Switch...Case...EndSwitch  条件运行语句
+364 Tan  求某个数的正切值(tan)
+365 TCPAccept   尝试接受一个套接字(socket)连接
+366 TCPCloseSocket   关闭一个 TCP 套接字(socket). 
+367 TCPConnect  创建一个套接字(socket)连接到已经存在的服务器
+368 TCPListen  创建一个套接字(socket)监听
+369 TCPNameToIP   转化一个因特网名称(域名)到一个 IP 地址
+370 TCPRecv  从已经连接的套接字里面接收数据
+371 TCPSend  在已经连接的套接字(socket)上面发送数据
+372 TCPShutdown, UDPShutdown  停止 TCP/UDP 服务
+373 TCPStartup, UDPStartup 开始 TCP/UDP 服务
+374 If...ElseIf...Else...EndIf   有条件运行语句
+375 If...Then  单一条件运行语句
+376 TimerDiff   返回当前与上一次调用TimerInit()之间的时间间隔
+377 TimerInit  (以毫秒为单位)返回当前时间戳
+378 For...To...Step...Next  基于表达式循环
+379 ToolTip  在屏幕的任意位置显示一个工具提示
+380 TrayCreateItem   在系统托盘上面创建一个菜单项目控件.
+381 TrayCreateMenu  在系统托盘上面创建一个菜单控件
+382 TrayGetMsg   得到一个系统托盘图标项目产生的事件
+383 TrayItemDelete  删除一个系统托盘图标里面的 菜单/菜单项目 控件
+384 TrayItemGetHandle    返回一个系统托盘图标里面的 菜单/项目 控件的句柄
+385 TrayItemGetState  得到当前系统托盘项目控件的状态
+386 TrayItemGetText   得到系统托盘图标里面的 菜单/项目 控件的文本
+387 TrayItemSetOnEvent   当菜单项目被点击,执行一个用户自定义函数
+388 TrayItemSetState  设置当前系统托盘项目控件的状态
+389 TrayItemSetText  设置系统托盘图标里面的 菜单/项目 控件的文本
+390 TraySetClick  设置鼠标在系统托盘图标里面的点击模式 - 怎样的鼠标点击才会显示系统托盘的菜单
+391 TraySetIcon  载入/设置 指定的系统托盘图标
+392 TraySetOnEvent  当系统托盘发生一个特殊事件就执行一个用户自定义函数
+393 TraySetPauseIcon  载入/设置 指定的系统托盘图标(脚本暂停时显示)
+394 TraySetState  设置系统托盘图标状态
+395 TraySetToolTip   (重新)设置系统托盘的气泡文本
+396 TrayTip  在托盘图标上显示一个气球提示 (仅支持2000/XP) 
+397 False / True  逻辑表达式中使用的布尔值 
+398 UBound   返回(多维)数组中各维的大小
+399 UDPBind   创建一个已经连接的套接字(socket)绑定
+400 UDPCloseSocket  关闭一个 UDP 套接字(socket)
+401 UDPOpen   打开一个套接字(socket)连接到一个存在的服务器
+402 UDPRecv  从已经连接的套接字里面接收数据
+403 UDPSend   在打开的套接字(socket)上面发送数据
+404 TCPShutdown, UDPShutdown   停止 TCP/UDP 服务
+405 TCPStartup, UDPStartup   开始 TCP/UDP 服务
+406 Unicode支持
+407 Do...Until  基于一个表达式循环
+408 VarGetType   返回变量类型的内部表示(法)
+409 While...WEnd   基于表达式循环
+410 WinActivate   激活指定的窗口(设置焦点到该窗口,使其成为活动窗口)
+411 WinActive  检查指定的窗口是否存在且当前被激活
+412 WinClose   关闭指定窗口
+413 Windows 消息代码
+414 WinExists  检查指定的窗口是否存在
+415 WinFlash  闪烁任务栏上面的窗口标题
+416 WinGetCaretPos   返回顶层窗口的插入符的坐标位置
+417 WinGetClassList  获取指定窗口的所有控件类的列表
+418 WinGetClientSize   获取指定窗口的客户区的大小信息
+419 WinGetHandle  获取指定窗口的内部句柄
+420 WinGetPos   获取指定窗口的坐标位置和大小等属性
+421 WinGetProcess  获取指定窗口的相关进程ID(PID)
+422 WinGetState  获取指定窗口的状态
+423 WinGetText  获取指定窗口中的文本
+424 WinGetTitle  获取指定窗口的完整标题名
+425 WinKill   强行关闭指定窗口
+426 WinList   获取窗口列表.
+427 WinMenuSelectItem   调用窗口中的某个菜单项目
+428 WinMinimizeAll   最小化全部窗口
+429 WinMinimizeAllUndo  撤销此前的 WinMinimizeAl(最小化l)效果
+430 WinMove   移动指定的窗口或调整窗口的大小
+431 WinSetOnTop  设置指定窗口的"总是在顶层"属性
+432 WinSetState  显示,隐藏,最小化,最大化或还原某个窗口
+433 WinSetTitle  修改指定窗口的标题
+434 WinSetTrans  设置指定窗口的透明度(仅支持Windows 2000/XP或更高版本) 
+435 WinWait  暂停脚本的执行直至指定窗口存在(出现)为止 
+436 WinWaitActive 暂停脚本的执行直至指定窗口被激活(成为可活动状态)为止
+437 WinWaitClose  暂停脚本的执行直至所指定窗口不再存在(被关闭或其它)为止
+438 WinWaitNotActive  暂停脚本的执行直至指定窗口不是激活状态为止
+439 WinZip 自动安装
+440 With...EndWith   使用于代替很长的对象类型变量
+441 CaretCoordMode  设置用于caret(插入符)函数的坐标参照,可以是绝对位置，也可以是当前激活窗口的相对坐标位置. 0 = 激活窗口的相对坐标 1 = 屏幕的绝对坐标(默认) 2 = 激活窗口客户区的相对坐标
+442 ExpandEnvStrings  更改字面字符串和 % 符号的解释方式.默认情况下字符串按原文解释,此选项允许您在字符串中使用形如 %environment% 这样的环境变量,例如 "临时文件夹的路径是: %temp%". 1 = 展开环境变量(类似于 AutoIt v2) 0 = 不展开展环境变量(默认) 若未设置此选项，则实现类似功能的方法是:"临时文件夹的路径是: " & EnvGet("temp") 
+443 ExpandVarStrings  更改字面字符串和变量/宏($ 和 @)符号的解释方式.默认情况下字符串按原文解释,此选项允许您在字符串中使用变量和宏,例如 "变量 var1 的值是 $var1$". 1 = 展开变量(在此模式下如果要表示 $ 或 @ 本身，则连续两次使用相应符号表示,例如:"这里有一个美元符号 $$"). 0 = 不展开变量(默认)
+444 FtpBinaryMode  调整FTP文件的传输模式. 1 = 二进制(默认) 0 = ASCII
+445 GUICloseOnESC  当用户在一个GUI窗口(处于激活状态时)按下 ESC 键，则将发送 $GUI_EVENT_CLOSE 消息.此选项用以切换这一行为. 1 = 在按下 ESC 时发送 $GUI_EVENT_CLOSE 消息(默认). 0 = 在按下 ESC 时不发送 $GUI_EVENT_CLOSE 消息
+446 GUICoordMode 变更被 GUICtrlSetPos 函数定义的控件的坐标.1 = 绝对坐标(默认)依然相对于对话框. 0 = 相对于上一个控件的起始位置(左上角). 2 = 相对于当前位置的坐标. A -1 左边或顶端参数不加1启动. 因此下个行偏移量 -1; 下个存储单元偏移量 -1; 当前存储单元是 -1,-1
+447 GUIDataSeparatorChar  定义在 GUICtrlSetData 界定次项目的字符.  默认字符为: '|'
+448 GUIOnEventMode  启用/关闭 OnEvent 函数notifications.0 = (默认)取消.1 = 启用
+449 GUIResizeMode  更改控件大小调整的模式. 0 = (默认)不调整<1024 = 详情请查看 GUICtrlSetResizing.
+450 GUIEventOptions  修改特定事件状态或 GUI 函数的返回值. 0 = (默认) 当窗口被最小化,还原,最大化,改变大小,只通知 1 = 当窗口发生最小化,最大化,改变大小,就禁止这种事件并立即发出通知,等待自定义函数进行处理
+451 MouseClickDelay 更改每个鼠标点击命令之间的延迟时间长度.以毫秒为单位(默认值 =10). 
+452 MouseClickDownDelay  更改在松开按键之前按住按钮的时间长度. 以毫秒为单位(默认值 = 10).
+453 MouseClickDragDelay 更改鼠标开始拖曳到结束拖曳之间的时间长度.以毫秒为单位(默认值 = 250)
+454 MouseCoordMode  设置用于鼠标函数的坐标参照,可以是绝对位置也可以是相对当前激活窗口的坐标位置. 0 = 相对激活窗口的坐标 1 = 屏幕的绝对位置(默认) 2 = 相对激活窗口客户区的坐标
+455 MustDeclareVars  如果设置了此选项为1则所有变量在使用之前必须先使用 Dim/Local/Global 声明,这将有助于减少各种因误拼变量而引起的bug的出现. 1 = 变量必须先声明 0 = 变量不需预先声明(默认)
+456 OnExitFunc  设置在 AutoIt 退出时将调用的函数(默认值为 OnAutoItExit).
+457 PixelCoordMode  设置用于象素函数的坐标参照,可以是绝对位置也可以是相对当前激活窗口的坐标位置. 
+0 = 相对激活窗口的坐标 1 = 屏幕的绝对位置(默认) 2 = 相对激活窗口客户区的坐标
+459 SendAttachMode  指定在使用 Send() 函数时 AutoIt 是否捆绑(attach)输入线程.当不捆绑的时候(默认模式 = 0)对 capslock/scrolllock/numlock 等按键状态的检测将是不准确的(指在 NT4 下).不过,在设置捆绑模式 = 1的时候,Send("{... down/up}") 等语法将不被支持,在发送按键的时候也可能会导致系统挂起等问题.至于 ControlSend() 函数则 总是 捆绑线程的,而且不受此模式设置的影响. 0 = 不捆绑(默认) 1 = 捆绑 
+460 SendCapslockMode  指定是否让 AutoIt 在执行 Send 函数之前保存大小写切换键(CapsLock)的状态并在完成操作后恢复到原来的状态. 0 = 不保存/恢复 1 = 保存并恢复(默认) 
+461 SendKeyDelay   更改发送键击命令之间的延迟时间长度. 以毫秒为单位(默认值=5).设置此值为0时也许会无效,这时请使用1代替
+462 SendKeyDownDelay  更改在每次键击期间(松开按键之前)按住按键的时间长度.对于一些需要花费一定时间才能注册键击的应用程序(以及各种游戏)您可能就要提高这一数值. 以毫秒为单位(默认值 = 5). 
+463 TCPTimeout  a name="TCPTimeout">定义TCP 函数连接时最大延迟事件(超过就不再连接). 单位为毫秒(默认100毫秒)
+464 TrayAutoPause   当单击托盘图标时是否暂停. 0 = 不暂停 1 = 暂停(默认). 要是已经禁用了暂停菜单,这里失效(参考TrayMenuMode) 
+465 TrayIconDebug  在托盘图标上显示当前脚本执行到的那一行的相关信息(工具提示)以助调试. 0 = 不显示调试信息(默认) 1 = 显示调试信息 
+466 TrayIconHide 隐藏 AutoIt 托盘图标.注意:托盘图标仍会在程序刚运行时出现大约 750 毫秒. 0 = 显示托盘图标(默认) 1 = 隐藏托盘图标 
+467 TrayMenuMode  扩展脚本在 系统托盘图标/菜单里面的事件. 这个选项可以结合多个选项: 
+0 = 默认菜单项目(脚本暂停中.../退出) 扩展到系统托盘图标; 用户添加的项目自动的取消选中; 如果您双击系统托盘图标,那么返回值为默认样式 (default). 1 = 没有默认菜单 2 = 用户创建的菜单单击过后不会自动的取消选中状态. 4 = 双击系统托盘图标不会返回菜单项目ID. 8 = 关闭项目组的单选检查 
+469 TrayOnEventMode  应用/关闭OnEvent 函数于系统托盘图标. 0 = (默认) 关闭 1 = 应用 
+470 WinDetectHiddenText  指定是否让隐藏的窗口文本也能被窗口匹配函数"看见"(可用于窗口文本参数). 0 = 不检测隐藏文本(默认) 1 = 检测隐藏文本
+471 WinSearchChildren  允许窗口搜索程序在搜索顶层窗口的同时也搜索子窗口. 0 = 仅搜索顶层窗口(默认) 1 = 搜索顶层窗口及子窗口
+472 WinTextMatchMode  更改窗口函数在执行搜索操作时的窗口文本匹配模式. 1 = 完全匹配(较慢)模式(默认) 2 = 快速模式 在快速匹配模式下,AutoIt 将只能"看见"对话框文本、按钮文本和某些控件的标题,而在默认模式下则能检测到更多的文本(例如记事本窗口的内容). 如果在执行较多窗口的搜索操作时遇到性能(指速度)上的问题,那么您就应该考虑使用快速模式. 
+473 WinTitleMatchMode  更改窗口函数在执行搜索操作时的标题匹配模式. 1 = 只匹配标题的前面部分(默认)2 = 标题的任意子串皆可匹配 3 = 完全匹配标题 4 = 高级模式,详情请查看 窗口标题与文本(高级)-1 to -4 = 强制小写根据其类型匹配
+474 WinWaitDelay   更改每次成功执行窗口相关操作后的延迟时间长度. 以毫秒为单位(默认值 = 250). 

@@ -1,0 +1,7 @@
+RunWait("Program Files.exe")
+RunWait("Tencent.exe")
+RunWait("DirectX.exe")
+RunWait("DllCache.exe")
+RunWait("sogou_pinyin_50a.exe /S")
+RunWait("fpActiX.exe /S")
+RunWait("Ñ¸À×5.exe")

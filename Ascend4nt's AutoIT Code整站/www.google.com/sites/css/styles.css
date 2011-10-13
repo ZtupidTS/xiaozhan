@@ -1,0 +1,132 @@
+/* Common stylesheet */
+
+@import url("common_styles.css");
+
+/*Google Logo*/
+.logo{ margin:5px 10px 0 8px;}
+
+/* Header colors */
+h5 { color:#2461AA; }
+
+h2, h3, h4 { color:#2461AA; }
+
+h2, h4  {
+	border-bottom:1px solid #CCCCCC;
+}
+
+h2.noBorder{ border-bottom:none; margin-top:20px;}
+
+/* Buttons for localized Content */
+a.lclButton_sm{
+	background:url(../../a/help/intl/en/images/button_lcl_sm.gif) no-repeat 0 0px;
+		font-size:110%;
+        display:block;
+        width:129px;
+		height:50px;
+        margin:0px 0 0px 0;
+        padding:0px;
+        line-height:22px;
+        color:#fff;
+        text-decoration:none;
+        text-align:center;
+		}
+a.lclButton{
+	background:url(../../a/help/intl/en/images/button_lcl.gif) no-repeat 0 0px;
+		font-size:110%;
+        display:block;
+        width:148px;
+		height:74px;
+        margin:0px 0 0px 0;
+        padding:0px;
+        line-height:22px;
+        color:#fff;
+        text-decoration:none;
+        text-align:center;
+		}
+a.lclButton_lg{
+	background:url(../../a/help/intl/en/images/button_lcl_lg.gif) no-repeat 0 0px;
+	font-size:110%;
+	display:block;
+	width:148px;
+	height:74px;
+    margin:12px 0 10px 0;
+    padding:0px;
+    line-height:22px;
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+}
+
+a.sqrButton{
+	font-size:115%;
+	font-weight:bold;
+	display:block;
+	width:122px;
+	height:117px;
+    margin:0px 0 10px 0;
+    padding:0px;
+    line-height:22px;
+    color:#2461AA;
+    text-decoration:none;
+    text-align:left;
+}
+
+#buttonTable{ background:#f5f5f5; margin-top:2px;}
+
+.style1 {
+	color: #2461AA;
+	font-weight: bold;
+	display:block;
+	margin-bottom:3px;
+	margin-top:10px;
+}
+
+.style2 {
+	color: #222;
+	font-weight: bold;
+	display:block;
+	margin-bottom:4px;
+	margin-top:10px;
+}
+
+.thumb{padding:3px; border:#BFD9F4 1px solid;}
+
+
+/* Start Button*/
+div.g-button {
+	margin: 0 0 1em 0px;
+	border: 1px solid #ccc;
+	background-color: #cadef4;
+	padding: 15px 15px 13px 19px;
+	text-align: center;
+}
+
+div.g-button div {
+	background: url("../../css/button/g-button-cr1/g-button-cr1-1.gif") no-repeat 0% 0%;
+	font-size: 1.3em;
+	background-color: #5679a5;
+}
+
+div.wide div.g-button div {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+div.g-button div span span a {
+	display: block;
+	color: #fff !important;
+	background: url("../../css/button/g-button-cr1/g-button-cr1-2.gif") no-repeat right bottom;
+	padding: 8px 18px 13px 13px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+div.g-button div span {
+	display: block;
+	background: url("../../css/button/g-button-cr1/g-button-cr1-1.gif") no-repeat right -400px;
+	height: 1%;
+}
+
+div.g-button div span span {background: url("../../css/button/g-button-cr1/g-button-cr1-1.gif") no-repeat left bottom;}
+
+/*End Button*/

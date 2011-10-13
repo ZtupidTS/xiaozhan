@@ -1,0 +1,262 @@
+分享]Rundll32.exe使用方法大全 
+winexec(Pchar('StrCommand'),sw_Show); 
+其中StrCommand代表以下命令之一(使用Windows中的运行不要加引号)： 
+rundll32 shell32,Control_RunDLL - 运行控制面板 
+rundll32 shell32,OpenAs_RunDLL - 打开打开方式窗口 
+rundll32 shell32,ShellAboutA Info-Box - 打开关于窗口 
+rundll32 shell32,Control_RunDLL desk.cpl - 打开显示属性窗口 
+rundll32 user,cascadechildwindows - 层叠全部窗口 
+rundll32 user,tilechildwindows - 最小化所有的子窗口 
+rundll32 user,repaintscreen - 刷新桌面 
+rundll32 shell,shellexecute Explorer - 重新运行Windows Explorer 
+rundll32 keyboard,disable - 锁写键盘 
+rundll32 mouse,disable - 让鼠标失效 
+rundll32 user,swapmousebutton - 交换鼠标按钮 
+rundll32 user,setcursorpos - 设置鼠标位置为(0,0) 
+rundll32 user,wnetconnectdialog - 打开映射网络驱动器窗口 
+rundll32 user,wnetdisconnectdialog - 打开断开网络驱动器窗口 
+rundll32 user,disableoemlayer - 显示BSOD窗口, (BSOD) = Blue Screen Of Death, 即蓝屏 
+rundll32 diskcopy,DiskCopyRunDll - 打开磁盘复制窗口 
+rundll32 rnaui.dll,RnaWizard - 运行Internet连接向导, 如果加上参数1则为silent模式 
+rundll32 shell32,SHFormatDrive - 打开格式化磁盘(A)窗口 
+rundll32 shell32,SHExitWindowsEx -1 - 冷启动Windows Explorer 
+rundll32 shell32,SHExitWindowsEx 1 - 关机 
+rundll32 shell32,SHExitWindowsEx 0 - 退当前用户 
+rundll32 shell32,SHExitWindowsEx 2 Windows9x 快速重启 
+rundll32 krnl386.exe,exitkernel - 强行退出Windows 9x(无确认) 
+rundll rnaui.dll,RnaDial MyConnect - 运行网络连接对话框 
+rundll32 msprint2.dll,RUNDLL_PrintTestPage - 选择打印机和打印测试页 
+rundll32 user,setcaretblinktime - 设置光标闪烁速度 
+rundll32 user, setdoubleclicktime - 测试鼠标双击速度 
+rundll32 sysdm.cpl,InstallDevice_Rundll - 搜索非PnP设备 
+　控制面板中的各项功能 
+
+　winexec('rundll32.exe shell32.dll, Control_RunDLL', 9); 
+　{辅助选项 属性-键盘} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL access.cpl, 1', 9); 
+　{辅助选项 属性-声音} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL access.cpl, 2', 9); 
+　{辅助选项 属性-显示} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL access.cpl, 3', 9); 
+　{辅助选项 属性-鼠标} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL access.cpl, 4', 9); 
+　{辅助选项 属性-常规} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL access.cpl, 5', 9); 
+　{添加删除程序 属性-安装卸载} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Appwiz.cpl, 1', 9); 
+　{添加删除程序 属性-Windows安装程序} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Appwiz.cpl, 2', 9); 
+　{添加删除程序 属性-启动盘} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Appwiz.cpl, 3', 9); 
+　{显示 属性-背景} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL desk.cpl, 0', 9);　 
+　{显示 属性-屏幕保护程序} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL desk.cpl, 1', 9); 
+　{显示 属性-外观} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL desk.cpl, 2', 9); 
+　{显示 属性-设置} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL desk.cpl, 3', 9); 
+　{Internet 属性-常规} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Inetcpl.cpl, 0', 9); 
+　{Internet 属性-安全} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Inetcpl.cpl, 1', 9); 
+　{Internet 属性-内容} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Inetcpl.cpl, 2', 9); 
+　{Internet 属性-连接} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Inetcpl.cpl, 3', 9); 
+　{Internet 属性-程序} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Inetcpl.cpl, 4', 9); 
+　{Internet 属性-高级} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Inetcpl.cpl, 5', 9); 
+　{区域设置 属性-区域设置} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Intl.cpl, 0', 9); 
+　{区域设置 属性-数字} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Intl.cpl, 1', 9); 
+　{区域设置 属性-货币} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Intl.cpl, 2', 9); 
+　{区域设置 属性-时间} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Intl.cpl, 3', 9); 
+　{区域设置 属性-日期} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Intl.cpl, 4', 9); 
+　 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Joy.cpl, 0', 9); 
+　 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Joy.cpl, 1', 9); 
+　{鼠标 属性} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Main.cpl', 9); 
+　{多媒体 属性-音频} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Mmsys.cpl, 0', 9); 
+　{多媒体 属性-视频} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Mmsys.cpl, 1', 9); 
+　{多媒体 属性-MIDI} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Mmsys.cpl, 2', 9); 
+　{多媒体 属性-CD音乐} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Mmsys.cpl, 3', 9); 
+　{多媒体 属性-设备} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Mmsys.cpl, 4', 9); 
+　{调制解调器 属性} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Modem.cpl', 9); 
+　 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Netcpl.cpl', 9); 
+　{密码 属性} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Password.cpl', 9); 
+　{扫描仪与数字相机 属性} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Sticpl.cpl', 9); 
+　{系统 属性-常规} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Sysdm.cpl, 0', 9); 
+　{系统 属性-设备管理器} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Sysdm.cpl, 1', 9); 
+　{系统 属性-硬件配置文件} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Sysdm.cpl, 2', 9); 
+　{系统 属性-性能} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Sysdm.cpl, 3', 9); 
+　{日期时间 属性} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL timedate.cpl', 9); 
+　{电源管理 属性} 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Powercfg.cpl', 9); 
+　 
+　winexec('rundll32.exe shell32.dll, Control_RunDLL Telephon.cpl', 9); 
+关于调用后的判断处理建议： 
+先声明一个cardinal类型的变量RtnCardinal获取返回值进行判断如： 
+RtnCardinal = winexec('rundll32.exe shell32.dll, Control_RunDLL Telephon.cpl', 9); 
+　返回值 可能原因 
+　0 程序超出内存　 
+ERROR_BAD_FORMAT 程序为一个非法的Win32.EXE程序 
+ERROR_FILE_NOT_FOUND 指定文件没找到　 
+ERROR_PATH_NOT_FOUND 指定路径没找到 
+
+使用方法： 
+点击“开始－程式－Ms－Dos方式”，进入Dos视窗，然後键入rundll32.exe user.exe,restartwindows，再按下回车键，这时你将看到，机器被重启了！怎么样，是不是很有趣？ 
+　　当然，Rundll的功能绝不仅仅是重启你的机器。其实，Rundll者，顾名思义，执行Dll也，它的功能就是以命令列的方式呼叫Windows的动态链结库，Rundll32.exe与Rundll.exe的区别就在於前者是呼叫32位的链结库，而後者是运用於16位的链结库，它们的命令格式是： 
+　　RUNDLL.EXE ，， 
+　　这里要注意三点：1.Dll档案名中不能含有空格，比如该档案位於cProgram Files目录，你要把这个路径改成cProgra～1；2.Dll档案名与Dll入口点间的逗号不能少，否则程式将出错并且不会给出任何资讯！3.这是最重要的一点：Rundll不能用来呼叫含返回值参数的Dll，例如Win32API中的GetUserName(),GetTextFace()等。在Visual Basic中，提供了一条执行外部程式的指令Shell,格式为： 
+　　Shell “命令列” 
+　　如果能配合Rundll32.exe用好Shell指令，会使您的VB程式拥有用其他方法难以甚至无法实现的效果：仍以重启为例，传统的方法需要你在VB工程中先建立一个模组，然後写入WinAPI的声明，最後才能在程式中呼叫。而现在只需一句 
+　　Shell “rundll32.exe user.exe,restartwindows”就搞定了！是不是方便多了？ 
+　　实际上，Rundll32.exe在呼叫各种Windows控制面板和系统选项方面有著独特的优势。下面，我就将本人在因特网上收集的有关Rundll的指令列举如下（很有用的，能省去你很多呼叫Windows API的时间！！），供大家在程式设计中引用： 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL 
+　　功能 显示控制面板 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL access.cpl,,1 
+　　功能 显示“控制面板－辅助选项－键盘”选项视窗 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL access.cpl,,2 
+　　功能 显示“控制面板－辅助选项－声音”选项视窗 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL access.cpl,,3 
+　　功能 显示“控制面板－辅助选项－显示”选项视窗 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL access.cpl,,4 
+　　功能 显示“控制面板－辅助选项－滑鼠”选项视窗 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL access.cpl,,5 
+　　功能 显示“控制面板－辅助选项－传统”选项视窗 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl @1 
+　　功能 执行“控制面板－添加新硬体”向导。 
+　　命令列 rundll32.exe shell32.dll,SHHelpShortcuts_RunDLL AddPrinter 
+　　功能 执行“控制面板－添加新印表机”向导。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL appwiz.cpl,,1 
+　　功能 显示 “控制面板－添加删除程式－安装卸载” 面板。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL appwiz.cpl,,2 
+　　功能 显示 “控制面板－添加删除程式－安装Windows” 面板。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL appwiz.cpl,,3 
+　　功能 显示 “控制面板－添加删除程式－启动盘” 面板。 
+　　命令列 rundll32.exe syncui.dll,Briefcase_Create 
+　　功能 在桌面上建立一个新的“我的公文包”。 
+　　命令列 rundll32.exe diskcopy.dll,DiskCopyRunDll 
+　　功能 显示复制软碟视窗 
+　　命令列 rundll32.exe apwiz.cpl,NewLinkHere ％1 
+　　功能 显示“建立快捷方式”的对话框，所建立的快捷方式的位置由％1参数决定。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL timedate.cpl,,0 
+　　功能 显示“日期与时间”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL timedate.cpl,,1 
+　　功能 显示“时区”选项视窗。 
+　　命令列 rundll32.exe rnaui.dll,RnaDial [某个拨号连接的名称] 
+　　功能 显示某个拨号连接的拨号视窗。如果已经拨号连接，则显示目前的连接状态的视窗。 
+　　命令列 rundll32.exe rnaui.dll,RnaWizard 
+　　功能 显示“新建拨号连接”向导的视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL desk.cpl,,0 
+　　功能 显示“显示属性－背景”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL desk.cpl,,1 
+　　功能 显示“显示属性－萤屏保护”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL desk.cpl,,2 
+　　功能 显示“显示属性－外观”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL desk.cpl,,3 
+　　功能 显示显示“显示属性－属性”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,SHHelpShortcuts_RunDLL FontsFolder 
+　　功能 显示Windows的“字体”档案夹。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL main.cpl @3 
+　　功能 同样是显示Windows的“字体”档案夹。 
+　　命令列 rundll32.exe shell32.dll,SHformatDrive 
+　　功能 显示格式化软碟对话框。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL joy.cpl,,0 
+　　功能 显示“控制面板－游戏控制器－一般”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL joy.cpl,,1 
+　　功能 显示“控制面板－游戏控制器－进阶”选项视窗。 
+　　命令列 rundll32.exe mshtml.dll,PrintHTML (HTML文档) 
+　　功能 列印HTML文档。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL mlcfg32.cpl 
+　　功能 显示Microsoft Exchange一般选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL main.cpl @0 
+　　功能 显示“控制面板－滑鼠” 选项 。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL main.cpl @1 
+　　功能 显示 “控制面板－键盘属性－速度”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL main.cpl @1,,1 
+　　功能 显示 “控制面板－键盘属性－语言”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL main.cpl @2 
+　　功能 显示Windows“印表机”档案夹。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL main.cpl @3 
+　　功能 显示Windows“字体”档案夹。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL main.cpl @4 
+　　功能 显示“控制面板－输入法属性－输入法”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL modem.cpl,,add 
+　　功能 执行“添加新调制解调器”向导。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL mmsys.cpl,,0 
+　　功能 显示“控制面板－多媒体属性－音频”属性页。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL mmsys.cpl,,1 
+　　功能 显示“控制面板－多媒体属性－视频”属性页。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL mmsys.cpl,,2 
+　　功能 显示“控制面板－多媒体属性－MIDI”属性页。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL mmsys.cpl,,3 
+　　功能 显示“控制面板－多媒体属性－CD音乐”属性页。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL mmsys.cpl,,4 
+　　功能 显示“控制面板－多媒体属性－设备”属性页。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL mmsys.cpl @1 
+　　功能 显示“控制面板－声音”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL netcpl.cpl 
+　　功能 显示“控制面板－网路”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL odbccp32.cpl 
+　　功能 显示ODBC32资料管理选项视窗。 
+　　命令列 rundll32.exe shell32.dll,OpenAs_RunDLL 
+功能 显示指定档案(drivepathfilename)的“打开方式”对话框。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL password.cpl 
+　　功能 显示“控制面板－密码”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL powercfg.cpl 
+　　功能 显示“控制面板－电源管理属性”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,SHHelpShortcuts_RunDLL PrintersFolder 
+　　功能 显示Windows“印表机”档案夹。(同rundll32.exe shell32.dll,Control_RunDLL main.cpl @2) 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL intl.cpl,,0 
+　　功能 显示“控制面板－区域设置属性－区域设置”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL intl.cpl,,1 
+　　功能 显示“控制面板－区域设置属性－数字”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL intl.cpl,,2 
+　　功能 显示“控制面板－区域设置属性－货币”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL intl.cpl,,3 
+　　功能 显示“控制面板－区域设置属性－时间”选项视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL intl.cpl,,4 
+　　功能 显示“控制面板－区域设置属性－日期”选项视窗。 
+　　命令列 rundll32.exe desk.cpl,InstallScreenSaver [萤屏保护档案名] 
+　　功能 将指定的萤屏保护档案设置为Windows的屏保，并显示萤屏保护属性视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,0 
+　　功能 显示“控制面板－系统属性－传统”属性视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,1 
+　　功能 显示“控制面板－系统属性－设备管理器”属性视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,2 
+　　功能 显示“控制面板－系统属性－硬体配置档案”属性视窗。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl,,3 
+　　功能 显示“控制面板－系统属性－性能”属性视窗。 
+　　命令列 rundll32.exe user.exe,restartwindows 
+　　功能 强行关闭所有程式并重启机器。 
+　　命令列 rundll32.exe user.exe,exitwindows 
+　　功能 强行关闭所有程式并关机。 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL telephon.cpl 
+　　功能 显示“拨号属性”选项视窗 
+　　命令列 rundll32.exe shell32.dll,Control_RunDLL themes.cpl 
+　　功能 显示“桌面主旨”选项面板 
+　　
+当然，不止是VisualBasic，象Delphi.VisualC＋＋等其他程式设计语言也可以通过呼叫外部命令的方法来使用Rundll的这些功能，具体方法这里就不再详细叙述了。灵活的使用Rundll,一定会使你的程式设计轻轻松松，达到事半功倍的效果！
