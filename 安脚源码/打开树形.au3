@@ -1,0 +1,10 @@
+MouseClick ( "left" ,131, 202,1, 5) 
+$var = ControlGetText("Centaurus", "Nodes", "TTreeView4")
+$handle = ControlGetHandle("Centaurus", "Nodes", "TTreeView4")
+$1 = ControlTreeView ("Centaurus", "Nodes", "TTreeView4", "Expand", "sea")
+$text = WinGetClassList("Centaurus", "Nodes")
+MsgBox(0, "类列表为:", $text)
+
+MsgBox(4160, "Information", "Not Found    "  & $var )
+MsgBox(4160, "Information", "Not Found    "  & $handle )
+MsgBox(4160, "Information", "Not Found    "  & $1 )
