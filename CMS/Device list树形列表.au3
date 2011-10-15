@@ -29,19 +29,17 @@
  脚本功能: 
 
 #ce ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿脚本开始＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
-#include<MsgBoxDJS.au3>
+;#include<MsgBoxDJS.au3>
 #Include <GuiTreeView.au3>
 HotKeySet("{ESC}", "Terminate")
 HotKeySet("{F2}", "Togglepause")
 
 Local $Paused ,$h
-WinActivate("Remote Setup(14)")
-ControlTreeView ("Remote Setup(14)", "", "SysTreeView321", "Select", "Advanced|Maintain")
-$1= ControlGetHandle("Remote Setup(14)", "Tree1", "[ID:1044]");获取树形列表控件句柄
-MsgBox("1","1",$1)
-$2=_GUICtrlTreeView_FindItemEx($1, "Advanced|Maintain");找到要点击的树形的 根|根项目名字如 1|2,这是获取项目句柄
-MsgBox("1","1",$2)
-_GUICtrlTreeView_ClickItem($1,$2,"left",True,1,2);点击树形列表项目
+WinActivate("Video surveillance client")
+ControlTreeView ("Video surveillance client", "", "SysTreeView321", "Select", "Device list(1/1)|14")
+$1= ControlGetHandle("Video surveillance client", "", "SysTreeView321");获取树形列表控件句柄
+$2=_GUICtrlTreeView_FindItemEx($1, "Device list(1/1)|14|通道01");找到要点击的树形的 根|根项目名字如 1|2,这是获取项目句柄
+_GUICtrlTreeView_ClickItem($1,$2,"left",True,2,2);点击树形列表项目
 
 ;$msg = MsgBoxDJS(0 + 48 + 4, '界面是否全部出现', '界面全部实现请点击确定，' & @CRLF & '是否继续？', 5, 2)
 
